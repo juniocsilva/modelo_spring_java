@@ -7,12 +7,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ProdutoDTO {
+public class FabricanteDTO {
 	
 	private Long id;
 	private String nome;
-	private float preco;
-	private FabricanteDTO fabricante;
-
-	
 }

@@ -31,6 +31,7 @@ public class ProdutoController {
 	
 	@GetMapping
 	public ResponseEntity<List<ProdutoDTO>> getProduto() {
+
 		return ResponseEntity.ok(produtoService.getTodosProdutos());
 	}
 	
@@ -44,6 +45,7 @@ public class ProdutoController {
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public ProdutoDTO salvar(@RequestBody ProdutoDTO produtoDTO) {
+
 		return produtoService.salvar(produtoDTO);
 	}
 
@@ -56,7 +58,7 @@ public class ProdutoController {
 	
 	@PutMapping("/{id}")
 	public ProdutoDTO atualizar(@PathVariable Long id,
-			@RequestBody Produto produto) {
+			@RequestBody ProdutoDTO produto) {
 		
 			ProdutoDTO produtoAtual = produtoService.buscarPorId(id);
 			BeanUtils.copyProperties(produto, produtoAtual, "id");
