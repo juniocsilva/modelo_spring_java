@@ -3,6 +3,7 @@ package com.example.app.application.service;
 import com.example.app.application.dto.FabricanteDTO;
 import com.example.app.application.exception.EntidadeEmUsoException;
 import com.example.app.application.exception.EntidadeNaoEncontradaException;
+import com.example.app.application.exception.FabricanteNaoEncontradoException;
 import com.example.app.domain.model.Fabricante;
 import com.example.app.domain.repository.FabricanteRepository;
 import org.modelmapper.ModelMapper;
@@ -36,7 +37,7 @@ public class FabricanteService {
 	public FabricanteDTO buscarPorId(Long id) {
 		
 			Fabricante fabricante =  fabricanteRepository.findById(id)
-					.orElseThrow(() -> new EntidadeNaoEncontradaException(
+					.orElseThrow(() -> new FabricanteNaoEncontradoException(
 							String.format(MSG_FABRICANTE_NAO_ENCONTRADO, id)));
         return modelMapper.map(fabricante, FabricanteDTO.class);
 	}
@@ -52,7 +53,7 @@ public class FabricanteService {
 		try {
 		
 			if (!fabricanteRepository.existsById(id)) {
-				throw new EntidadeNaoEncontradaException(
+				throw new FabricanteNaoEncontradoException(
 						String.format(MSG_FABRICANTE_NAO_ENCONTRADO, id));
 	        }
 			fabricanteRepository.deleteById(id);

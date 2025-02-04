@@ -1,18 +1,16 @@
 package com.example.app.application.service;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
+import com.example.app.application.dto.ProdutoDTO;
+import com.example.app.application.exception.*;
+import com.example.app.domain.model.Produto;
+import com.example.app.domain.repository.ProdutoRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
-import com.example.app.application.dto.ProdutoDTO;
-import com.example.app.application.exception.EntidadeEmUsoException;
-import com.example.app.application.exception.EntidadeNaoEncontradaException;
-import com.example.app.domain.model.Produto;
-import com.example.app.domain.repository.ProdutoRepository;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ProdutoService {
@@ -37,16 +35,22 @@ public class ProdutoService {
 	public ProdutoDTO buscarPorId(Long id) {
 		
 			Produto produto =  produtoRepository.findById(id)
-					.orElseThrow(() -> new EntidadeNaoEncontradaException(
+					.orElseThrow(() -> new ProdutoNaoEncontradoException(
 							String.format(MSG_PRODUTO_NAO_ENCONTRADO, id)));	
 			ProdutoDTO produtoDTO = modelMapper.map(produto, ProdutoDTO.class);
 			return produtoDTO;
 	}
 
 	public ProdutoDTO salvar (ProdutoDTO produtoDTO) {
-		Produto produto = modelMapper.map(produtoDTO, Produto.class);
-		produtoRepository.save(produto);
-		return modelMapper.map(produto, ProdutoDTO.class);
+
+		try {
+			Produto produto = modelMapper.map(produtoDTO, Produto.class);
+			produtoRepository.save(produto);
+			return modelMapper.map(produto, ProdutoDTO.class);
+		} catch (Exception e) {
+			throw (new NegocioException(String.format("Não existe um cadastro de fabricante com código %d",produtoDTO.getFabricante().getId()),e));
+		}
+
 		 
 	}
 
@@ -54,7 +58,7 @@ public class ProdutoService {
 		try {
 		
 			if (!produtoRepository.existsById(id)) {
-				throw new EntidadeNaoEncontradaException(
+				throw new ProdutoNaoEncontradoException(
 						String.format(MSG_PRODUTO_NAO_ENCONTRADO, id));
 	        }
 			produtoRepository.deleteById(id);
