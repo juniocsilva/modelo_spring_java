@@ -48,10 +48,6 @@ public class JsonTableReader {
                         itemRelatorio.setDescricao(String.valueOf(items[1]));
                         itemRelatorio.setSituacao(String.valueOf(items[2]));
                         listItemRelatorio.add((itemRelatorio));
-//                        for (Object item : items) {
-//                            System.out.println(String.join(" | ", String.valueOf(item), " | ")); // Exibir como tabela formatada
-//                        }
-
 
                     } if (row.get(0).equals("Item de Acompanhamento")) {
                         captura = true;
