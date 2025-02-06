@@ -1,4 +1,4 @@
-package br.gov.caixa.cedip.extrainfopdf.servico;
+package com.example.app.application.service;
 
 import com.google.gson.Gson;
 import org.apache.pdfbox.cos.COSDocument;

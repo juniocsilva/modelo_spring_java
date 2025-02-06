@@ -1,4 +1,4 @@
-package br.gov.caixa.cedip.extrainfopdf.servico;
+package com.example.app.application.service;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.lang.reflect.Type;
 
 public class JsonTableReader {
     public static void main(String[] args) {
-        String jsonFilePath = "tabelas_extraidas.json";
+        String jsonFilePath = "/Users/junio/Downloads/tabelas_extraidas.json";
 
         try {
             Gson gson = new Gson();
