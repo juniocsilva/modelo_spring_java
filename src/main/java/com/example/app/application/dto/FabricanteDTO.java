@@ -11,4 +11,5 @@ public class FabricanteDTO {
 	
 	private Long id;
 	private String nome;
+	private String industria;
 }

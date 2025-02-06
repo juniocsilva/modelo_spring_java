@@ -1,6 +1,6 @@
 SET IDENTITY_INSERT fabricante ON
-insert into fabricante (id, nome) values (1, 'VOLKSWAGEN');
-insert into fabricante (id, nome) values (2, 'GM');
+insert into fabricante (id, nome, industria) values (1, 'VOLKSWAGEN', 'Automobilística');
+insert into fabricante (id, nome, industria) values (2, 'GM', 'Automobilística');
 SET IDENTITY_INSERT fabricante OFF
 
 insert into produto (nome, preco, fabricante_id) values ('FUSCA', 2000.07, 1);

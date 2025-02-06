@@ -1,7 +1,9 @@
 package com.example.app.application.service;
 
+import com.example.app.application.dto.FabricanteDTO;
 import com.example.app.application.dto.ProdutoDTO;
 import com.example.app.application.exception.*;
+import com.example.app.domain.model.Fabricante;
 import com.example.app.domain.model.Produto;
 import com.example.app.domain.repository.ProdutoRepository;
 import org.modelmapper.ModelMapper;
@@ -21,6 +23,9 @@ public class ProdutoService {
 
 	@Autowired
 	ProdutoRepository produtoRepository;
+
+	@Autowired
+	FabricanteService fabricanteService;
 
 	@Autowired
 	private ModelMapper modelMapper;
@@ -44,6 +49,11 @@ public class ProdutoService {
 	public ProdutoDTO salvar (ProdutoDTO produtoDTO) {
 
 		try {
+			Long fabricanteId = produtoDTO.getFabricante().getId();
+
+			FabricanteDTO fabricante = fabricanteService.buscarPorId(fabricanteId);
+
+			produtoDTO.setFabricante(fabricante);
 			Produto produto = modelMapper.map(produtoDTO, Produto.class);
 			produtoRepository.save(produto);
 			return modelMapper.map(produto, ProdutoDTO.class);

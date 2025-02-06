@@ -19,4 +19,5 @@ public class Fabricante {
 	@EqualsAndHashCode.Include
 	private Long id;
 	private String nome;
+	private String industria;
 }
