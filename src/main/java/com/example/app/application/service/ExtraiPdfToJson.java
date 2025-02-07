@@ -19,14 +19,48 @@ import java.util.Map;
 
 public class ExtraiPdfToJson {
     public static void main(String[] args) throws IOException {
-        File pdfFile = new File("C:\\sistemas\\teste\\AEROGALEAO-CEVIG-15-2025.pdf");
+        //File pdfFile = new File("C:\\sistemas\\teste\\RT_CEVIG_015_2025_CARJ.pdf");
+        String folderPath = "C:/sistemas/teste"; // Caminho da pasta com os PDFs
 
-        PDFParser parser = new PDFParser(new RandomAccessBufferedFileInputStream(pdfFile));
-        parser.parse();
-        COSDocument cosDoc = parser.getDocument();
-        PDFTextStripper pdfStripper = new PDFTextStripper();
-        PDDocument pdDoc = new PDDocument(cosDoc);
-        String jsonOutputPath = "C:\\sistemas\\teste\\tabelas_extraidas.json";
+        File folder = new File(folderPath);
+
+        if (!folder.exists() || !folder.isDirectory()) {
+            System.out.println("A pasta especificada não existe ou não é um diretório.");
+            return;
+        }
+
+        // Listando arquivos PDF na pasta
+        File[] pdfFiles = folder.listFiles((dir, name) -> name.toLowerCase().endsWith(".pdf"));
+
+        if (pdfFiles == null || pdfFiles.length == 0) {
+            System.out.println("Nenhum arquivo PDF encontrado na pasta.");
+            return;
+        }
+
+        // Processando cada arquivo PDF
+        for (File pdfFile : pdfFiles) {
+            System.out.println("Lendo: " + pdfFile.getName());
+            try {
+                fazExtracao(pdfFile);
+                System.out.println("Conteúdo extraído:\n");
+
+            } catch (IOException e) {
+                System.err.println("Erro ao ler o arquivo " + pdfFile.getName() + ": " + e.getMessage());
+            }
+        }
+
+    }
+
+    private static void fazExtracao(File pdfFile) throws IOException{
+        //PDFParser parser = new PDFParser(new RandomAccessBufferedFileInputStream(pdfFile));
+        //parser.parse();
+        //COSDocument cosDoc = parser.getDocument();
+        //PDFTextStripper pdfStripper = new PDFTextStripper();
+        //pdfStripper.setSuppressDuplicateOverlappingText(true);
+
+        PDDocument pdDoc = PDDocument.load(pdfFile);
+        //PDDocument pdDoc = new PDDocument(cosDoc);
+        String jsonOutputPath = "C:/sistemas/teste/json_intermediario/" + pdfFile.getName() + ".json";
         List<Map<String, Object>> extractedTables = new ArrayList<>();
 
         try {

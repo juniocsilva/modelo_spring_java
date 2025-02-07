@@ -6,6 +6,7 @@ import com.example.app.application.service.FabricanteService;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +43,7 @@ public class FabricanteController {
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public FabricanteDTO salvar(@RequestBody FabricanteDTO fabricanteDTO) {
+	public FabricanteDTO salvar(@RequestBody @Valid FabricanteDTO fabricanteDTO) {
 
 		return fabricanteService.salvar(fabricanteDTO);
 	}
@@ -56,7 +57,7 @@ public class FabricanteController {
 	
 	@PutMapping("/{id}")
 	public FabricanteDTO atualizar(@PathVariable Long id,
-			@RequestBody FabricanteDTO fabricante) {
+			@RequestBody @Valid FabricanteDTO fabricante) {
 		
 			FabricanteDTO fabricanteAtual = fabricanteService.buscarPorId(id);
 			BeanUtils.copyProperties(fabricante, fabricanteAtual, "id");

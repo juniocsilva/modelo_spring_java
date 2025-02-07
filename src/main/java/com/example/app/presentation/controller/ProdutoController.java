@@ -1,24 +1,25 @@
 package com.example.app.presentation.controller;
 
+import com.example.app.application.dto.Groups;
 import com.example.app.application.dto.ProdutoDTO;
 import com.example.app.application.service.ProdutoService;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.BeanUtils;
-import org.springframework.util.ReflectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.server.ServletServerHttpRequest;
+import org.springframework.util.ReflectionUtils;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import com.fasterxml.jackson.databind.DeserializationFeature;
-
+import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Map;
-import java.lang.reflect.Field;
 
 @RestController
 @RequestMapping("/produto")
@@ -42,7 +43,7 @@ public class ProdutoController {
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public ProdutoDTO salvar(@RequestBody ProdutoDTO produtoDTO) {
+	public ProdutoDTO salvar(@RequestBody @Validated(Groups.CadastroProduto.class) ProdutoDTO produtoDTO) {
 
 		return produtoService.salvar(produtoDTO);
 	}
@@ -56,7 +57,7 @@ public class ProdutoController {
 	
 	@PutMapping("/{id}")
 	public ProdutoDTO atualizar(@PathVariable Long id,
-			@RequestBody ProdutoDTO produto) {
+			@RequestBody @Validated(Groups.CadastroProduto.class) ProdutoDTO produto) {
 		
 			ProdutoDTO produtoAtual = produtoService.buscarPorId(id);
 			BeanUtils.copyProperties(produto, produtoAtual, "id");
