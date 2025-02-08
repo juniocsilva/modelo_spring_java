@@ -1,16 +1,28 @@
 package com.example.app.domain.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-//@Entity
-//@Table(name = "temp.SIMPG_COVENANTS_HISTORICO")
+
+@Entity
+@Getter
+@Setter
+@Table(name = "SIMPG_COVENANTS_HISTORICO")
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class ItemRelatorio {
-    String NU_RT;
-    String NO_CLAUSULA;
-    String DE_DESCRICAO;
-    String DE_STATUS;
-    String DE_SITUACAO;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @EqualsAndHashCode.Include
+    private Long NU_ID;
+    private String NU_RT;
+    @Column(length = 4096)
+    private String NO_CLAUSULA;
+    @Column(length = 4096)
+    private String DE_DESCRICAO;
+    private String DE_STATUS;
+    @Column(length = 4096)
+    private String DE_SITUACAO;
 }

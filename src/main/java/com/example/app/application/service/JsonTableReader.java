@@ -17,12 +17,12 @@ import java.lang.reflect.Type;
 
 public class JsonTableReader {
     public static void main(String[] args) throws IOException {
-//        String jsonFilePath = "/Users/junio/Downloads/tabelas_extraidas.json";
-//        String jsonSaida = "/Users/junio/Downloads/relatorio.json";
 
-        //String jsonFilePath = "c:\\sistemas\\teste\\tabelas_extraidas.json";
-        String jsonSaida = "c:/sistemas/teste/json_final/";
-        String folderPath = "C:/sistemas/teste/json_intermediario"; // Caminho da pasta com os PDFs
+//        String jsonSaida = "c:/sistemas/teste/json_final/";
+//        String folderPath = "C:/sistemas/teste/json_intermediario"; // Caminho da pasta com os PDFs
+
+        String jsonSaida = "/Users/junio/Downloads/sistemas/teste/json_final/";
+        String folderPath = "/Users/junio/Downloads/sistemas/teste/json_intermediario"; // Caminho da pasta com os PDFs
 
         File folder = new File(folderPath);
 

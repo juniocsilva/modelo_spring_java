@@ -4,6 +4,7 @@ import com.example.app.application.dto.FabricanteDTO;
 import com.example.app.application.service.FabricanteService;
 import com.example.app.domain.model.ItemRelatorio;
 import com.example.app.domain.model.RelatorioTecnico;
+import com.example.app.domain.repository.ItemRelatorioRepository;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
@@ -32,6 +33,10 @@ import java.util.Map;
 @RestController
 @RequestMapping("/pdf")
 public class PdfController {
+
+	@Autowired
+	private ItemRelatorioRepository itemRelatorioRepository;
+
 	@GetMapping
 	public ResponseEntity<?> getFabricante() {
 		fase1();
@@ -39,8 +44,11 @@ public class PdfController {
 	}
 
 	private void fase1() {
-		String jsonSaida = "c:/sistemas/teste/json_final/";
-		String folderPath = "C:/sistemas/teste/json_intermediario"; // Caminho da pasta com os PDFs
+//		String jsonSaida = "c:/sistemas/teste/json_final/";
+//		String folderPath = "C:/sistemas/teste/json_intermediario"; // Caminho da pasta com os PDFs
+
+		String jsonSaida = "/Users/junio/Downloads/sistemas/teste/json_final/";
+		String folderPath = "/Users/junio/Downloads/sistemas/teste/json_intermediario"; // Caminho da pasta com os PDFs
 
 		File folder = new File(folderPath);
 
@@ -75,7 +83,7 @@ public class PdfController {
 		}
 	}
 
-	private static void  carregaDados(String nomeJson, String jsonFilePath, String jsonSaida) throws IOException {
+	private void  carregaDados(String nomeJson, String jsonFilePath, String jsonSaida) throws IOException {
 		try {
 			Gson gson = new Gson();
 			Type listType = new TypeToken<List<Map<String, Object>>>() {}.getType();
@@ -98,18 +106,19 @@ public class PdfController {
 						Object []items = row.toArray();
 						ItemRelatorio itemRelatorio = new ItemRelatorio();
 						itemRelatorio.setNU_RT(nomeJson);
-						itemRelatorio.setNO_CLAUSULA(nomeJson);
-						itemRelatorio.setNO_CLAUSULA(String.valueOf(items[0]));
-						itemRelatorio.setDE_DESCRICAO(String.valueOf(items[1]));
+						itemRelatorio.setNO_CLAUSULA(nomeJson.replace("\\r", " "));
+						itemRelatorio.setNO_CLAUSULA(String.valueOf(items[0]).replace("\\r", " "));
+						itemRelatorio.setDE_DESCRICAO(String.valueOf(items[1]).replace("\\r", " "));
 						String [] status = items[2].toString().split("\\r");
 						StringBuilder situacao = new StringBuilder();
 						for (int i = 1; i < status.length; i++) {
 							situacao.append(status[i]).append("\r");
 						}
-						itemRelatorio.setDE_STATUS(String.valueOf(status[0]));
+						itemRelatorio.setDE_STATUS(String.valueOf(status[0]).replace("\\r", " "));
 
-						itemRelatorio.setDE_SITUACAO(situacao.toString());
-						listItemRelatorio.add((itemRelatorio));
+						itemRelatorio.setDE_SITUACAO(situacao.toString().replace("\\r", " "));
+						//listItemRelatorio.add((itemRelatorio));
+						itemRelatorioRepository.save(itemRelatorio);
 
 					} if (row.get(0).equals("Item de Acompanhamento")) {
 						captura = true;
@@ -117,11 +126,11 @@ public class PdfController {
 				}
 				//System.out.println("------------");
 			}
-			ObjectMapper objectMapper = new ObjectMapper();
-			File file = new File(jsonSaida);
-			relatorioTecnico.setItems(listItemRelatorio);
-			// Escrevendo JSON no arquivo
-			objectMapper.writeValue(file, relatorioTecnico);
+//			ObjectMapper objectMapper = new ObjectMapper();
+//			File file = new File(jsonSaida);
+//			relatorioTecnico.setItems(listItemRelatorio);
+//			// Escrevendo JSON no arquivo
+//			objectMapper.writeValue(file, relatorioTecnico);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -19,8 +19,8 @@ import java.util.Map;
 
 public class ExtraiPdfToJson {
     public static void main(String[] args) throws IOException {
-        //File pdfFile = new File("C:\\sistemas\\teste\\RT_CEVIG_015_2025_CARJ.pdf");
-        String folderPath = "C:/sistemas/teste"; // Caminho da pasta com os PDFs
+        String folderPath = "/Users/junio/Downloads/sistemas/teste";
+        //String folderPath = "C:/sistemas/teste"; // Caminho da pasta com os PDFs
 
         File folder = new File(folderPath);
 
@@ -59,8 +59,9 @@ public class ExtraiPdfToJson {
         //pdfStripper.setSuppressDuplicateOverlappingText(true);
 
         PDDocument pdDoc = PDDocument.load(pdfFile);
-        //PDDocument pdDoc = new PDDocument(cosDoc);
-        String jsonOutputPath = "C:/sistemas/teste/json_intermediario/" + pdfFile.getName() + ".json";
+
+        //String jsonOutputPath = "C:/sistemas/teste/json_intermediario/" + pdfFile.getName() + ".json";
+        String jsonOutputPath = "/Users/junio/Downloads/sistemas/teste/json_intermediario/" + pdfFile.getName() + ".json";
         List<Map<String, Object>> extractedTables = new ArrayList<>();
 
         try {
