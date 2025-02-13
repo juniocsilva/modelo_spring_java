@@ -19,8 +19,8 @@ import java.util.Map;
 
 public class ExtraiPdfToJson {
     public static void main(String[] args) throws IOException {
-        String folderPath = "/Users/junio/Downloads/sistemas/teste";
-        //String folderPath = "C:/sistemas/teste"; // Caminho da pasta com os PDFs
+        //String folderPath = "/Users/junio/Downloads/sistemas/teste";
+        String folderPath = "C:/sistemas/teste"; // Caminho da pasta com os PDFs
 
         File folder = new File(folderPath);
 
@@ -60,8 +60,8 @@ public class ExtraiPdfToJson {
 
         PDDocument pdDoc = PDDocument.load(pdfFile);
 
-        //String jsonOutputPath = "C:/sistemas/teste/json_intermediario/" + pdfFile.getName() + ".json";
-        String jsonOutputPath = "/Users/junio/Downloads/sistemas/teste/json_intermediario/" + pdfFile.getName() + ".json";
+        String jsonOutputPath = "C:/sistemas/teste/json_intermediario/" + pdfFile.getName() + ".json";
+        //String jsonOutputPath = "/Users/junio/Downloads/sistemas/teste/json_intermediario/" + pdfFile.getName() + ".json";
         List<Map<String, Object>> extractedTables = new ArrayList<>();
 
         try {

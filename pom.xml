@@ -47,21 +47,21 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		<!-- MYSQL -->
+		<!-- MYSQL
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		-->
 
-
-		<!-- SQL SERVER
+		<!-- SQL SERVER -->
 		<dependency>
 		    <groupId>com.microsoft.sqlserver</groupId>
 		    <artifactId>mssql-jdbc</artifactId>
 		    <version>12.2.0.jre11</version>
 		</dependency>
-		-->
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
