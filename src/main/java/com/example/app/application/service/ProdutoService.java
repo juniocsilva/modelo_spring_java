@@ -2,8 +2,9 @@ package com.example.app.application.service;
 
 import com.example.app.application.dto.FabricanteDTO;
 import com.example.app.application.dto.ProdutoDTO;
-import com.example.app.application.exception.*;
-import com.example.app.domain.model.Fabricante;
+import com.example.app.application.exception.EntidadeEmUsoException;
+import com.example.app.application.exception.NegocioException;
+import com.example.app.application.exception.ProdutoNaoEncontradoException;
 import com.example.app.domain.model.Produto;
 import com.example.app.domain.repository.ProdutoRepository;
 import org.modelmapper.ModelMapper;

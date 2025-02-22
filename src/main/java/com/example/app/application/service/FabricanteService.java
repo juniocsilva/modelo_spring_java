@@ -2,7 +2,6 @@ package com.example.app.application.service;
 
 import com.example.app.application.dto.FabricanteDTO;
 import com.example.app.application.exception.EntidadeEmUsoException;
-import com.example.app.application.exception.EntidadeNaoEncontradaException;
 import com.example.app.application.exception.FabricanteNaoEncontradoException;
 import com.example.app.domain.model.Fabricante;
 import com.example.app.domain.repository.FabricanteRepository;
