@@ -1,5 +1,5 @@
 package com.example.app.application.dto;
 
 public interface Groups {
-    public interface CadastroProduto {}
+    public interface FabricanteId {}
 }

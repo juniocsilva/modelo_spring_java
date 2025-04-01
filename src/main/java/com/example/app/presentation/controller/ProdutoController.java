@@ -6,6 +6,7 @@ import com.example.app.application.service.ProdutoService;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +44,7 @@ public class ProdutoController {
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public ProdutoDTO salvar(@RequestBody @Validated(Groups.CadastroProduto.class) ProdutoDTO produtoDTO) {
+	public ProdutoDTO salvar(@RequestBody @Valid ProdutoDTO produtoDTO) {
 
 		return produtoService.salvar(produtoDTO);
 	}
@@ -57,7 +58,7 @@ public class ProdutoController {
 	
 	@PutMapping("/{id}")
 	public ProdutoDTO atualizar(@PathVariable Long id,
-			@RequestBody @Validated(Groups.CadastroProduto.class) ProdutoDTO produto) {
+			@RequestBody @Valid ProdutoDTO produto) {
 		
 			ProdutoDTO produtoAtual = produtoService.buscarPorId(id);
 			BeanUtils.copyProperties(produto, produtoAtual, "id");
