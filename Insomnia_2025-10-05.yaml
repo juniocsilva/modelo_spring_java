@@ -1,0 +1,1232 @@
+type: collection.insomnia.rest/5.0
+name: SIIDX
+meta:
+  id: wrk_10963484281e4d96b95d96e55813dda9
+  created: 1745434361441
+  modified: 1745434361441
+  description: ""
+collection:
+  - url: "https://api.staging.acesso.gov.br/confiabilidades/v3/contas/33336580110/n\
+      iveis?response-type=ids "
+    name: Niveis/Confiabilidades
+    meta:
+      id: req_247c98c417d14614aca9afc6d77c339c
+      created: 1748964379990
+      modified: 1753990534386
+      isPrivate: false
+      description: ""
+      sortKey: -1748964379990
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMzMzM2NTgwMTEwIiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzMzMzY1ODAxMTAiLCJleHAiOjE3NTM5OTMyNzIsImlhdCI6MTc1Mzk4OTY3MiwianRpIjoiY2ViN2JjN2MtNmIwMS00ODc2LWI0ZGYtNDQwYmRjOWU3OTc3In0.A9RUX0rVam6e46uRcNSSTgDWioxmfNqFPGf3yoWaJdoY3PiGBKTQ4LMhzkUmYU3XSMcx97kiiLm7QAb1tnsLC4bvryGVtXzzDlXTkVbEL63DeizunlxPCWh8JP911dVkPsRDR3uwVj_JEGy85FobAkkzThXDY6jlEIjMY0mWy5HLhYFj1KDwD_vaJRKgtEvlDSc4GZvaLYpsTWqbuI7sBNX2KM_gl0ExoorptaPngAX1wghveAoq1wfT2gMlWLhYp3r0EpKoTy-CWfOBJSe2eKOuXwj9SjyA7oXy8og9yZCDkANiWVXit4Az9lSgG729vJKe69BrMIe2kf32Rd-_Yw
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/govbr/acessos
+    name: siidx níveis/confiabilidades do GOV.BR
+    meta:
+      id: req_b5ec60d06af24a0091b2b2aed0748912
+      created: 1750873368241
+      modified: 1753990521031
+      isPrivate: false
+      description: ""
+      sortKey: -1748315151235
+    method: GET
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMzMzM2NTgwMTEwIiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJwYXNzd2QiLCJjYXB0Y2hhIl0sImlzcyI6Imh0dHBzOlwvXC9zc28uc3RhZ2luZy5hY2Vzc28uZ292LmJyXC8iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiIzMzMzNjU4MDExMCIsImV4cCI6MTc1MTgyNDg4NywiaWF0IjoxNzUxODIxMjg3LCJqdGkiOiI1ODNjODYxYi1hNjJjLTQ4YmItODExZS01ZGZmZDFmNzA4ZGEifQ.Ufrw4A3ujPt6BjiPUbUGSjzlrp3XSRlyP4SDgO2CSQvbnzl4c8rx4CNv5ZW0sMOBT6U_V6ogcUkGJH0DQdi1JO7j8wrYvXZdK17QCMcMu9sJU2gI2Zqv7wdkY25b4c0QHrY6H5jMeQz8OB2q_VeCi7-LcbErOfy3SxUQ5L4ssvELLUI4Y8HFpug90RhnDsi15f7B2kjFLMwIEEqKQ9Uet_MtK7xbPdQ0vTdC94MEpNuofKjmyPLo_YchnZQwDm6GNswvqWpguyw0GfvPiBKsbG-h7_ktn5iVtHWaOGbwfbx0yQ5zpeU2b8oLoztWloX4UFbBrJCVUPIos49oDo1UzQ
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/govbr/token
+    name: GovBr Token
+    meta:
+      id: req_018121e553844b87a4ca0311190ef410
+      created: 1751565714159
+      modified: 1755201147783
+      isPrivate: false
+      description: ""
+      sortKey: -1748152844046.25
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"code": "eyJraWQiOiJjb2RlQ3J5cHRvZ3JhcGh5IiwiYWxnIjoiZGlyIiwiZW5jIjoiQTI1NkdDTSJ9..siItAIspSf0oVW1t.PAzFAGMZySQQ-wJgV6AzaIx8Zo9H15TcvmBsffHUx433lA.ADlKzsTTu5XrLUwj748FtQ",
+        	"code_verifier": "NTYwdGFzcUc2dXg1SkNHdWxEalNLcWNtS3p5Q0lkZn5ib3FSMGRWdXhKcmpx"
+        }
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_676f4bd32ff34d5e89fb6f04a0e73153
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMzMzM2NTgwMTEwIiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzMzMzY1ODAxMTAiLCJleHAiOjE3NTEwNTUwNTIsImlhdCI6MTc1MTA1MTQ1MiwianRpIjoiY2NhOTM4ZDgtYWIzMC00MzA4LWFjNTUtNDM0Y2MxMmJhMWQxIn0.rC56F3UvfsP026eNIpzSAwEjVwgv5oafaUcEM7LxNIsnUKNkbR6si4yIs2eZtY4ChN5rmHJqF1FcRU_fRFFToqYVlhG6d1-PBptYwg_-wWXxfeHkS4w2KZjgH6DLzEWJC9x9OdighkvGmsUweOzsF6w6RphzgBjh6igvWYDymP_awYxbaYwDZMwzkCmGz5yqxfL9er_Fynq_4uCsZ8sHqNfhL79PCkj8cB32dfFRaUxuOVirp9u9IeeXltYKRAm1Uc8rJ_JA2WsQGMDaKDs4jYFIwOoL5_BLxFI2DkTY6Bc4hbGt0YnPNwwiy1zE2Q-hlG_QjX-6bZZEF905Fp3aqw
+        description: ""
+        disabled: true
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://sso.staging.acesso.gov.br/token
+    name: GovBr Token - staging
+    meta:
+      id: req_25428cfd0e4842a485c7609fd26821ca
+      created: 1751572128088
+      modified: 1754588430892
+      isPrivate: false
+      description: ""
+      sortKey: -1748071690451.875
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - name: grant_type
+          value: authorization_code
+          id: pair_d6555cf9381e491db2f59ffd9cc99bb3
+        - id: pair_ccd84af7502446eead6f3704a0f987cf
+          name: code
+          value: eyJraWQiOiJjb2RlQ3J5cHRvZ3JhcGh5IiwiYWxnIjoiZGlyIiwiZW5jIjoiQTI1NkdDTSJ9..qvHRqinv7d4qaAU8.nJfVjUAmkJOeTA_VlDtKz9SNsxYfT6N9pq3cws058Nskcg.xmiJ1phW7X_LrZPCEyHvHQ
+          description: ""
+          disabled: false
+        - id: pair_c800923d64974490ab566f6904cc1013
+          name: code_verifier
+          value: MnBzM3pnaXNLMEVMWnlqSDNIRm1tUVZzLXBKQkJCS0VFU0s3bENKaEFGX3ZB
+          description: ""
+          disabled: false
+        - id: pair_b4572f9c56b74599b31b1d92f1bad68b
+          name: redirect_uri
+          value: https://siidx.caixa.gov.br:4200/callback
+          description: ""
+          disabled: false
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_14ab91de239e4904aee0420a1f17f554
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Basic
+          aC1zaWlkeC5jYWl4YS5nb3YuYnI6ejZYbjNYRDUzZ2Jfd2Q1MFA3MmE2cC1oaTAza0ZHR0JBbGM2NUotRExwVktZS2c2T1llUFNBdlRGU0FRMGxldzlSdUNPNjlrZnhqN3dTbVFpN2ZXR2c=
+        description: ""
+        disabled: false
+    authentication:
+      type: none
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/serproid/token
+    name: SerproId Token
+    meta:
+      id: req_421fa32556594b0a876ae77e6ecb6c19
+      created: 1752516169870
+      modified: 1755784848151
+      isPrivate: false
+      description: ""
+      sortKey: -1748112267249.0625
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"code": "b13692bf-1b79-495e-908f-6f16cc931e6f",
+        	"code_verifier": "qrG5vU79bC3Ehw_6gmBewc40dQJJAcMJG9RlH-hFQVfV6g7gw3jZS3wuEEutyZUBNtaVTalMoE57AX7_"
+        }
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_676f4bd32ff34d5e89fb6f04a0e73153
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMzMzM2NTgwMTEwIiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzMzMzY1ODAxMTAiLCJleHAiOjE3NTEwNTUwNTIsImlhdCI6MTc1MTA1MTQ1MiwianRpIjoiY2NhOTM4ZDgtYWIzMC00MzA4LWFjNTUtNDM0Y2MxMmJhMWQxIn0.rC56F3UvfsP026eNIpzSAwEjVwgv5oafaUcEM7LxNIsnUKNkbR6si4yIs2eZtY4ChN5rmHJqF1FcRU_fRFFToqYVlhG6d1-PBptYwg_-wWXxfeHkS4w2KZjgH6DLzEWJC9x9OdighkvGmsUweOzsF6w6RphzgBjh6igvWYDymP_awYxbaYwDZMwzkCmGz5yqxfL9er_Fynq_4uCsZ8sHqNfhL79PCkj8cB32dfFRaUxuOVirp9u9IeeXltYKRAm1Uc8rJ_JA2WsQGMDaKDs4jYFIwOoL5_BLxFI2DkTY6Bc4hbGt0YnPNwwiy1zE2Q-hlG_QjX-6bZZEF905Fp3aqw
+        description: ""
+        disabled: true
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_ead497bb53ce4266b5e7cf3479d689f7
+      created: 1752517784903
+      modified: 1755519670151
+      isPrivate: false
+      description: ""
+      sortKey: -1752517784903
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"access_token": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJuZW9pZCIsImF1ZCI6Im5lb2lkIiwic3ViIjoiYzE3NWJkNDMtNTMwNC00YzI2LWE1ZDQtOTY2MDNhOTM5ZDFkIiwianRpIjoiMzhiMmQxODMtYzI2Zi00NTBlLThmYWYtYjc1YWM3ZTFhYTI1IiwibmkiOiIzMzMzNjU4MDExMCIsImlhdCI6MTc1MjUxNzY1NywibmJmIjoxNzUyNTE3NjU3LCJleHAiOjE3NTI1MTc5NTd9.l63GhaB9QUpi0MAC4LnMgCrnPAyAnB-jPCNSRcqtg5FGSCUfOQfHTBR-ak1voAhkXdO1Kh8Je2XuQKY_jTYA1qX2-GarSaQ-9Z9isGad8Dk2f2lEvE1dIGc-jVZOiW4lfveQsP24DFYfp7xIE5BzQP4OMUJzV9pE5CimUjh7VDda_NXchSu9hUsC
+        xPUw7oJo2RLc3cdFNPZxz8h9FjMIGtECrknkeFthNb5XCv8twi85Zol9YeURGR6wH0SUediGcx3SSt15Ifu7LL3axHTAhij3JTnhNXBK8kykTTn_PT-knYAGa7OsnmeQiZTTFfNXXmu8UI2paWV6KV4I0ys1Og",
+        	"token_type": "Bearer",
+        	"expires_in": 300,
+        	"scope": "multi_signature",
+        	"authorized_identification_type": "CPF",
+        	"authorized_identification": "33336580110"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/syngular/token
+    name: Syngular Token
+    meta:
+      id: req_ba85cfdf4e114c47a2165f03e033fda6
+      created: 1752521341676
+      modified: 1755611086850
+      isPrivate: false
+      description: ""
+      sortKey: -1748091978850.4688
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"code": "ZO5JREAUNR3T2RJOIYPMQDYSHI",
+        	"code_verifier": "MNCY8tLqMGx1cJ6slfnY6TI22LYyOaqetkvsUEEFtvf4g8p3YVRY6mqGA0LOGkwgYDCsfpcbsNKKuLKt"
+        }
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_676f4bd32ff34d5e89fb6f04a0e73153
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMzMzM2NTgwMTEwIiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzMzMzY1ODAxMTAiLCJleHAiOjE3NTEwNTUwNTIsImlhdCI6MTc1MTA1MTQ1MiwianRpIjoiY2NhOTM4ZDgtYWIzMC00MzA4LWFjNTUtNDM0Y2MxMmJhMWQxIn0.rC56F3UvfsP026eNIpzSAwEjVwgv5oafaUcEM7LxNIsnUKNkbR6si4yIs2eZtY4ChN5rmHJqF1FcRU_fRFFToqYVlhG6d1-PBptYwg_-wWXxfeHkS4w2KZjgH6DLzEWJC9x9OdighkvGmsUweOzsF6w6RphzgBjh6igvWYDymP_awYxbaYwDZMwzkCmGz5yqxfL9er_Fynq_4uCsZ8sHqNfhL79PCkj8cB32dfFRaUxuOVirp9u9IeeXltYKRAm1Uc8rJ_JA2WsQGMDaKDs4jYFIwOoL5_BLxFI2DkTY6Bc4hbGt0YnPNwwiy1zE2Q-hlG_QjX-6bZZEF905Fp3aqw
+        description: ""
+        disabled: true
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://psc.syngularid.com.br/v0/oauth/token
+    name: Syngular Token - Internet
+    meta:
+      id: req_ed3a612dcd3d4867a12e18a059fd98f3
+      created: 1752523572914
+      modified: 1757331679042
+      isPrivate: false
+      description: ""
+      sortKey: -1748031113654.6875
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - name: grant_type
+          value: authorization_code
+          id: pair_d6555cf9381e491db2f59ffd9cc99bb3
+        - id: pair_ccd84af7502446eead6f3704a0f987cf
+          name: code
+          value: OJTEHYCRPU7VHP7BJ2PT4ESW5E
+          description: ""
+          disabled: false
+        - id: pair_c800923d64974490ab566f6904cc1013
+          name: code_verifier
+          value: KZt-hcr4PfzQgFH938mxJh7th1OUk5C5N0U9P01AGWRvPEsMJml1FjDcmYUT7xJf8GgXz1VGp-ROqBk4
+          description: ""
+          disabled: false
+        - id: pair_b4572f9c56b74599b31b1d92f1bad68b
+          name: redirect_uri
+          value: https://assinador.siidx.des.caixa.gov.br:4200/callback
+          description: ""
+          disabled: false
+        - id: pair_9df8131279be4a598e8e40d8d9832a80
+          name: client_id
+          value: 322e4918-b6d3-4437-8055-cc5543cd2c84
+          description: ""
+          disabled: false
+        - id: pair_1f29b796a79842c29fb71e5fb043a5bb
+          name: client_secret
+          value: OJDPrA4MuSnom96z8HHjOJ31JS8/N9tWsCRcbpBHfV8=
+          description: ""
+          disabled: false
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_14ab91de239e4904aee0420a1f17f554
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Basic
+          aC1zaWlkeC5jYWl4YS5nb3YuYnI6ejZYbjNYRDUzZ2Jfd2Q1MFA3MmE2cC1oaTAza0ZHR0JBbGM2NUotRExwVktZS2c2T1llUFNBdlRGU0FRMGxldzlSdUNPNjlrZnhqN3dTbVFpN2ZXR2c=
+        description: ""
+        disabled: true
+    authentication:
+      type: none
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/util/encripta
+    name: Encripta
+    meta:
+      id: req_0e7df34e1f434ef3b92a2b82b4418f27
+      created: 1752684159018
+      modified: 1758921506030
+      isPrivate: false
+      description: ""
+      sortKey: -1748132555647.6562
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"mensagem": "30030030030"
+        }
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_676f4bd32ff34d5e89fb6f04a0e73153
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMzMzM2NTgwMTEwIiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzMzMzY1ODAxMTAiLCJleHAiOjE3NTEwNTUwNTIsImlhdCI6MTc1MTA1MTQ1MiwianRpIjoiY2NhOTM4ZDgtYWIzMC00MzA4LWFjNTUtNDM0Y2MxMmJhMWQxIn0.rC56F3UvfsP026eNIpzSAwEjVwgv5oafaUcEM7LxNIsnUKNkbR6si4yIs2eZtY4ChN5rmHJqF1FcRU_fRFFToqYVlhG6d1-PBptYwg_-wWXxfeHkS4w2KZjgH6DLzEWJC9x9OdighkvGmsUweOzsF6w6RphzgBjh6igvWYDymP_awYxbaYwDZMwzkCmGz5yqxfL9er_Fynq_4uCsZ8sHqNfhL79PCkj8cB32dfFRaUxuOVirp9u9IeeXltYKRAm1Uc8rJ_JA2WsQGMDaKDs4jYFIwOoL5_BLxFI2DkTY6Bc4hbGt0YnPNwwiy1zE2Q-hlG_QjX-6bZZEF905Fp3aqw
+        description: ""
+        disabled: true
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/util/desencripta
+    name: Desencripta
+    meta:
+      id: req_a310dae2d5e14858be55649581681da2
+      created: 1752684390656
+      modified: 1759336582013
+      isPrivate: false
+      description: ""
+      sortKey: -1748122411448.3594
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"mensagem": "IRpfYENLYa7jK4TockeFFxSiCHDGsGGSScPKehPiJ4ANvLgU28/sJ/fmLkaVc/mRapZ522L4U51mXMCzyfpg2Yq0uoHJdFXno+Jc4AQ9hVItjvT+8lJz/Zb5yOri+aNJ38qDyblYFx7Nv7BSnYmUjPwjkVYd3jkK0nVSV1QR7iX+1AQeH14sJEiv7geo57dcUAVp2Cgfa42bYd53iFuky3t1nF5HlFtxfXGMNaZuTRuh5AmJd7Jj2vOLkzLl6uacjuVwLVMKFU/6sczrmSdNzokveb5M7KhozEIVAPaolgJZ9xQEDOLG0nn6Bziv3pZ6VZOexPg1O5k7LMNrfUzPqdUcz4T1yQMmdUKq+OEF1cuFiuEZIeb8IuDs5pSwXZvqcSTIMPnDGhYj26H3wJk2tPBoCySQ7aqGWPx9KjIe9DmRcmZ15on6+9zwR+G1OAgWWBbdL/CViZg5/FhZZbg0n3q0ZAsqmewDFtJ5fZW7uIQSqxmSHt16PM6krIQJZ8btmRZdPpDOPvSHdRGFnuhLRByyw7hseiUtsY14xJ8hlfMDubN99xKScYn73jybc4GlSFF6rXaoK3ddJ8epGpm4DT94X9RuSblMaDovJrE8uFd5Tm6fXisl4FARTo8z6BjriFQkuA/hLIu6KWvDyr5sU2kTCXH8GcrrLzqFGra6GNHYH4N12zG02qzSnQeUGTKK+j2adfdG5FBtAtJXvrCq5I2BVqvjE4avLxmHpxHf8ZFb8qaH+bnsEwL/bTjklvhZZpxVBWNTq1hebW+s/yPv8DZKVu0i16lApCPGbuBoC/RC8OF4cfB3NVDO3PGRRry3wYS30ZNiWUB66nfgnZFo2f713jXb9gi9X9q5uOeu4BaJs4PFu6pbwFrvoB1OGbN/9x5Y2GQoQdgm0RGxIXmWCwSSIQjJdwC/Dk4KFy5jNRC5CwMiZmMnEu2lxr0hJNVcu/QOqINPO5PAo7iESUpCSfYBWh9lN8bqVyjP6eHjQWOMPwcsoc6JWfZTM1mwlpYVDR1/C3MQYwWpHZIBbGtSewzLrEOPF93ssMcGLG0oVabWhJ5OoLweC3Yv3Y59B/Ec6NibImZ3bvgp/nam+w=="
+        }
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_676f4bd32ff34d5e89fb6f04a0e73153
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMzMzM2NTgwMTEwIiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzMzMzY1ODAxMTAiLCJleHAiOjE3NTEwNTUwNTIsImlhdCI6MTc1MTA1MTQ1MiwianRpIjoiY2NhOTM4ZDgtYWIzMC00MzA4LWFjNTUtNDM0Y2MxMmJhMWQxIn0.rC56F3UvfsP026eNIpzSAwEjVwgv5oafaUcEM7LxNIsnUKNkbR6si4yIs2eZtY4ChN5rmHJqF1FcRU_fRFFToqYVlhG6d1-PBptYwg_-wWXxfeHkS4w2KZjgH6DLzEWJC9x9OdighkvGmsUweOzsF6w6RphzgBjh6igvWYDymP_awYxbaYwDZMwzkCmGz5yqxfL9er_Fynq_4uCsZ8sHqNfhL79PCkj8cB32dfFRaUxuOVirp9u9IeeXltYKRAm1Uc8rJ_JA2WsQGMDaKDs4jYFIwOoL5_BLxFI2DkTY6Bc4hbGt0YnPNwwiy1zE2Q-hlG_QjX-6bZZEF905Fp3aqw
+        description: ""
+        disabled: true
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://assinatura-api.staging.iti.br/externo/v2/certificadoPublico
+    name: Gov.Br - Certificado
+    meta:
+      id: req_600c27bfff774736999875579f7d8a85
+      created: 1752780682683
+      modified: 1754578824004
+      isPrivate: false
+      description: ""
+      sortKey: -1748051402053.2812
+    method: GET
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMzMzM2NTgwMTEwIiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzMzMzY1ODAxMTAiLCJleHAiOjE3NTI3ODQzNzksImlhdCI6MTc1Mjc4MDc3OSwianRpIjoiY2IzNTk1NmEtNGUzOC00OTgwLTg2OWEtZjg3OGU1MDQ5NTY4In0.KLUO1C4U1q0pxjSGQAscg0plN6fzeBG31aEBPrLCBY4WqJmRwI0XdjoVFZB6V4jpJyrH3VxsZXqNiuS4O-F6GrmMl5RPVBE9UpQjGvUmL6bVMOHZyvxZXreY4E2UrVEcaJVzT1Kt9pH3qjUUvLQvpTjrGxQaadWzne41vA6VNktbd5zK6X0wYZviGQcHQCXBgF5TQC6p2UuGGZRaplx7C-lxFxmkG3-JpqqJEj5O-onn_zwp4sn4yG5FJ7HE0vz1jere9me2qve18LePjegFavd-ydPUy_wPRrwXDW3BliMeENkUodHgbu0hvnpIb9Ofwcfz9hzn3Er4ayIHu-fAPg
+        description: ""
+        disabled: false
+    authentication:
+      type: none
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://assinatura-api.staging.iti.br/externo/v2/assinarPKCS7
+    name: govbr-assinador
+    meta:
+      id: req_386c6746003a43749b4686f5aa7955cb
+      created: 1754499150780
+      modified: 1756234776296
+      isPrivate: false
+      description: ""
+      sortKey: -1747828229668.75
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        { 
+        	"hashBase64": "BO2V39+7J0Z4X+6+FuE47Hl+/QO/7dI15chKlywboSM="
+        }
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_10029423a3a849e5b21efbab0f3947f1
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.ZXlKNmFYQWlPaUpFUlVZaUxDSmxibU1pT2lKQk1USTRRMEpETFVoVE1qVTJJaXdpWVd4bklqb2laR2x5SW4wLi5pVWs2Smo1WkZaTDJyNUUyWW9xRzRRLkJMbUtjMmQtZ0ljc0lzOXNFZzBHS0RueTZTRkVtNVZiT2hXbnEtcDlaU3dTQTFZVGNZczZZSHVIamhZUXR0M2ZyTG1Zak9PRWF1R0FqejlNTElLWGlPMVY0TkE3S2o0YldBYkNPeU91RkZrdm9RTzVxM3FVR190RGtGTUVJZnNscTBjNVV3aGVHUWJfVEZTaDBIZXY1SDBxQzYzcGgwVS02WHBCcUc2SFVQSllWSExnRlh6eWc3Wkd5aFlaOVk4WkZfLXdFTUVqcnpPYnlGVTRKWWkwTVF0Q2hBdTIzNENUdFhyQ2lDX0tjelhPTERPSmVZeHl3Ump4Z01nWFR1UjdIdDFFa2wzSWN4dlZxai1xS3dXRGpIOGpTdkRKUGZQd3lEOEFvZDVCYlM5eUtJcGY1N2kxbUxwZ1daLUx6MzRrak1VWmxmT2FScWlPd1hTY0Y1SlhrTjhVZlJtRUFrMjJKMTFIdS1oYVpjbmUwR2p2VmFDb3dGX2Q5ZHhWazlXSFItVFFuMFlTbHdSZ29XeERKVmt4U0JFb1ltdWszNFIydU4tRWd5aGtSendtY1pURXFZb1hwMEtVMW41Q1VPeUcuOXlrczZvdzIwLTlYcE5keWk3dDFuQQ.MB8z0fgJYRuluplw0fH7w7GLKdsLKd-KTalp3NWW-H8
+        description: ""
+        disabled: false
+        type: text
+        multiline: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://cas.staging.iti.br/oauth2.0/token
+    name: ITI Token - staging
+    meta:
+      id: req_d0de1cdeea7e4c13af4653ba45494ee4
+      created: 1754578838914
+      modified: 1755784830920
+      isPrivate: false
+      description: ""
+      sortKey: -1748061546252.5781
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_ccd84af7502446eead6f3704a0f987cf
+          name: code
+          value: OC-89c8bd47-3288-473e-8fe0-33847a245559
+          description: ""
+          disabled: false
+        - id: pair_eb7c53003f144f68917539390602604c
+          name: client_id
+          value: siscaixamcmvhom
+          description: ""
+          disabled: false
+        - name: grant_type
+          value: authorization_code
+          id: pair_d6555cf9381e491db2f59ffd9cc99bb3
+        - id: pair_6f965c9b562749ea82cc604ac8b3e98f
+          name: client_secret
+          value: vMUSApXEkvojQNavmbqE
+          description: ""
+          disabled: false
+        - id: pair_b4572f9c56b74599b31b1d92f1bad68b
+          name: redirect_uri
+          value: http://localhost/callback
+          description: ""
+          disabled: false
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_4493c95d4cfe4dcb97f17a8071e8e9e5
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+    authentication:
+      type: none
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://assinatura-api.staging.iti.br/externo/v2/certificadoPublico
+    name: iti-assinador
+    meta:
+      id: req_9da235310363451aac163cc929639f39
+      created: 1754587883515
+      modified: 1755706189081
+      isPrivate: false
+      description: ""
+      sortKey: -1747747076074.375
+    method: GET
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.ZXlKNmFYQWlPaUpFUlVZaUxDSmxibU1pT2lKQk1USTRRMEpETFVoVE1qVTJJaXdpWVd4bklqb2laR2x5SW4wLi56bFk3Wk42cV95UEZ3Wkp0bXd4WnF3LjNtVzd4NEwzVkw0TVVxcjFaTWphZEhCQ0x5V3RkZVQ1RHJfMUxXb21IRnFTYUNPZEcxWFpONHdtbnZUVzRIMTNOS1Y2NXBJbFlsNHdPTW1CeC1MTFZiMjFxRnZSTV92cEZxQzBMLW5scUdyUlVzUnpzYVhraURUNUg4bHQtN0ZOMVJRUVJZbXRiYUhVY2FqVElmMFNqQnE4WmtTc1dNWXVpbmNvNkpfNnFYeDZaaDcwWEdZdms2TzdPcTAwb3JIN0ZfQjZNeDh3WXV3WGdhaGZTUjNQZ1RwM1FLSWJzSWVGckFzQ0pPaUZDbEpBVHMtZUZCM2VTdFdzNDlTbGc5b0RCNHQ0Qll2bkRsc3AtX2poVEhwaHFHWXo0NFRlaHlxY2ZlUnpnSUh5RWRRbDE0ampFNTBla1JMX2RObjEyOVc5ZkZkck9Hb1ZiTndKVFpRbDZ0aUhoaXZXdnpfV1hfZGJfQ2hIVlNOM3A4Q3ZHaW9sNVdON3lyUUJsTnpxYnRqZV9udUZpY3NjcHV4Q0owX2NuaFYybm9YRDRqWXVHSWRaSlNpcWRMb0VvYjguZ2tIVFJpZEZxRkU5LVlVRUVRaS05UQ.Ot9AAaitWAeTa7vDAbYCX-FpoDB7apcgRX7oLVQti2Q
+        description: ""
+        disabled: false
+        type: text
+        multiline: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/assinador-iti/token
+    name: Assinador ITI Token
+    meta:
+      id: req_f45f463b3c30440283b888d33dda6d9f
+      created: 1755201278943
+      modified: 1755201316233
+      isPrivate: false
+      description: ""
+      sortKey: -1748142699846.9531
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"code": "eyJraWQiOiJjb2RlQ3J5cHRvZ3JhcGh5IiwiYWxnIjoiZGlyIiwiZW5jIjoiQTI1NkdDTSJ9..siItAIspSf0oVW1t.PAzFAGMZySQQ-wJgV6AzaIx8Zo9H15TcvmBsffHUx433lA.ADlKzsTTu5XrLUwj748FtQ"
+        }
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_676f4bd32ff34d5e89fb6f04a0e73153
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMzMzM2NTgwMTEwIiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzMzMzY1ODAxMTAiLCJleHAiOjE3NTEwNTUwNTIsImlhdCI6MTc1MTA1MTQ1MiwianRpIjoiY2NhOTM4ZDgtYWIzMC00MzA4LWFjNTUtNDM0Y2MxMmJhMWQxIn0.rC56F3UvfsP026eNIpzSAwEjVwgv5oafaUcEM7LxNIsnUKNkbR6si4yIs2eZtY4ChN5rmHJqF1FcRU_fRFFToqYVlhG6d1-PBptYwg_-wWXxfeHkS4w2KZjgH6DLzEWJC9x9OdighkvGmsUweOzsF6w6RphzgBjh6igvWYDymP_awYxbaYwDZMwzkCmGz5yqxfL9er_Fynq_4uCsZ8sHqNfhL79PCkj8cB32dfFRaUxuOVirp9u9IeeXltYKRAm1Uc8rJ_JA2WsQGMDaKDs4jYFIwOoL5_BLxFI2DkTY6Bc4hbGt0YnPNwwiy1zE2Q-hlG_QjX-6bZZEF905Fp3aqw
+        description: ""
+        disabled: true
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://solucoes.caixa:3022/remessas/getPaises
+    name: teste solucoes.caixa
+    meta:
+      id: req_083476773d404d3fa332d91a1cee59d3
+      created: 1755626898619
+      modified: 1755627090293
+      isPrivate: false
+      description: ""
+      sortKey: -1747706499277.1875
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters:
+      - id: pair_563538626cd14be6a442802ec08d24f4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_10acb3db62454157a93a3e3c016aede8
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+      - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYXRyaWN1bGEiOiJDMDk3MDk3Iiwibm9tZSI6IkZFUk5BTkRPIERBIFNJTFZBIFJBWkVSQSIsImlhdCI6MTc1NTYyNjIwMCwiZXhwIjoxNzU1NzEyNjAwfQ.gi1R9XFFJI4CJFM_9l9fmg8jMV8TzBymLaB3TzaCmN0
+        description: ""
+        disabled: false
+        type: text
+        multiline: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - name: SIIDX
+    meta:
+      id: fld_b2da3d51e22340f4b5114e80101e5839
+      created: 1745434361446
+      modified: 1745434361446
+      sortKey: -1745434359678
+      description: ""
+    children:
+      - url: https://login.des.caixa/auth/realms/intranet/protocol/openid-connect/token
+        name: "[TOKEN] [INTRA] [CREDENTIAL] cli-web-idx"
+        meta:
+          id: req_3fda1392043543f98ca38faef9f26d2c
+          created: 1745434361450
+          modified: 1745434361450
+          isPrivate: false
+          description: ""
+          sortKey: -1745434359677
+        method: POST
+        body:
+          params:
+            - value: client_credentials
+              name: grant_type
+              disabled: false
+            - value: 7a0ed353-e5f3-47a2-a505-5c931805b84a
+              name: client_secret
+              disabled: false
+            - value: cli-ser-idx
+              name: client_id
+              disabled: false
+            - value: c099404
+              name: username
+              disabled: true
+            - value: ""
+              name: password
+              disabled: true
+          mimeType: application/x-www-form-urlencoded
+        scripts:
+          afterResponse: let token 
+            = JSON.parse(responseBody).access_token;insomnia.environment.set("TOKEN_ABM", token);
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api.des.caixa:8443/identidade-digital/assinador-documentos/solicitarassinatura/solicitar-assinatura
+        name: Solicitar Assinatura
+        meta:
+          id: req_752eeb33b5fd4dd19997ab60acacb48b
+          created: 1745434361453
+          modified: 1745434361453
+          isPrivate: false
+          description: ""
+          sortKey: -1745434359676
+        method: POST
+        body:
+          params:
+            - type: text
+              name: dados_solicitacao
+              disabled: false
+              value: |-
+                {
+                  "nome": "Fluxo Completo",
+                  "descricao": "Teste sem assinar",
+                  "tipoAssinatura": "QUALIFICADA",
+                  "dataLimiteAssinatura": "2025-04-20T16:01:12",
+                  "interessados": [
+                    {
+                      "nome": "Patrick Henrique da Silva Lima",
+                      "cpf": "35295784878",
+                      "email": "phlima@latam.stefanini.com",
+                      "celular": "5511999034435",
+                      "selo": {
+                        "pagina": 1,
+                        "x": 52,
+                        "y": 130,
+                        "largura": 200,
+                        "altura": 80
+                      },
+                      "ordem": 1,
+                      "papel": "ASSINANTE"
+                    }
+                  ],
+                  "sequencial": true,
+                  "interrompeSeNegativo": true
+                }
+            - type: file
+              name: documento
+              disabled: false
+              fileName: /C:/Users/c068442/Downloads/Layer7 API Developer Portal - 5.1.2 (API
+                Manager).pdf
+          mimeType: multipart/form-data
+        headers:
+          - name: apikey
+            value: l7aeae4f6612e1476ba8e9aa3a643df004
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNRmVKNjVfRC14cU55M1Zta01Ib01WS1NjZlA3S21ZazdtVjBJaEsta0F3In0.eyJqdGkiOiIwNjg1ZDRiMy02MDk1LTQzMGEtYjM0YS1lMDAzOWNkMTQ1NjYiLCJleHAiOjE3NDQ5MDk0ODgsIm5iZiI6MCwiaWF0IjoxNzQ0OTA4NTg4LCJpc3MiOiJodHRwczovL2xvZ2luLmRlcy5jYWl4YS9hdXRoL3JlYWxtcy9pbnRyYW5ldCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI5MmE0NDBkMS0yYWQ1LTQxYzAtODg4NS0yYzAzZDVhYmNkMzkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjbGktc2VyLWlkeCIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImU5YjRiZjg3LTkwMWEtNDlhNC1iMzQ4LTc2ZWVlZDcwMWY1NCIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImNsaWVudEhvc3QiOiIxMC4xMTEuMjQuMjciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudElkIjoiY2xpLXNlci1pZHgiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY2xpLXNlci1pZHgiLCJjbGllbnRBZGRyZXNzIjoiMTAuMTExLjI0LjI3IiwiZW1haWwiOiJzZXJ2aWNlLWFjY291bnQtY2xpLXNlci1pZHhAcGxhY2Vob2xkZXIub3JnIn0.erRmtZ7welh07P6ucDzMgd12TOF68ux-DmBP29eGOm1mVVk1_3umbKZVhECzifxrnmPnnywnKsTuqu_4EeECpEC8bmZSi4Q3byxQUy9X7VJ3qPBzgXdCQ5fTMpzmcmzanEZAPy4l0xzN9P6HiYU-ofuPpH5SrdjoJWi00C6G0moCj2FGcKkwlqRBbL8w-hwULIzpA_UpgYctM-uf_vkwNLnG73xN_paUuD5CwjCaWlTVd4wDEIbBTO5Xn1bx-sD03Y5YD40lTAx4aWmWgEU3ZlLwaHkUrZrS8JwCkDHrez8uS3Vj1PgfiDeqSyemHDrC0KCAhwL8Yu5fCe7yJWWtZQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api.des.caixa:8443/identidade-digital/assinador-documentos/solicitarassinatura/cancelar
+        name: Cancelar Assinatura
+        meta:
+          id: req_8a3fc5a9266c461aa2662665bb569b5a
+          created: 1745434361456
+          modified: 1745434361456
+          isPrivate: false
+          description: ""
+          sortKey: -1745434359675
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: "{\r
+
+            \"idFluxo\": 40,\r
+
+            \"motivo\": \"DESISTENCIA_CLIENTE\"\r
+
+            }"
+        headers:
+          - name: apikey
+            value: l7aeae4f6612e1476ba8e9aa3a643df004
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNRmVKNjVfRC14cU55M1Zta01Ib01WS1NjZlA3S21ZazdtVjBJaEsta0F3In0.eyJqdGkiOiIwNjg1ZDRiMy02MDk1LTQzMGEtYjM0YS1lMDAzOWNkMTQ1NjYiLCJleHAiOjE3NDQ5MDk0ODgsIm5iZiI6MCwiaWF0IjoxNzQ0OTA4NTg4LCJpc3MiOiJodHRwczovL2xvZ2luLmRlcy5jYWl4YS9hdXRoL3JlYWxtcy9pbnRyYW5ldCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI5MmE0NDBkMS0yYWQ1LTQxYzAtODg4NS0yYzAzZDVhYmNkMzkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjbGktc2VyLWlkeCIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImU5YjRiZjg3LTkwMWEtNDlhNC1iMzQ4LTc2ZWVlZDcwMWY1NCIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImNsaWVudEhvc3QiOiIxMC4xMTEuMjQuMjciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudElkIjoiY2xpLXNlci1pZHgiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY2xpLXNlci1pZHgiLCJjbGllbnRBZGRyZXNzIjoiMTAuMTExLjI0LjI3IiwiZW1haWwiOiJzZXJ2aWNlLWFjY291bnQtY2xpLXNlci1pZHhAcGxhY2Vob2xkZXIub3JnIn0.erRmtZ7welh07P6ucDzMgd12TOF68ux-DmBP29eGOm1mVVk1_3umbKZVhECzifxrnmPnnywnKsTuqu_4EeECpEC8bmZSi4Q3byxQUy9X7VJ3qPBzgXdCQ5fTMpzmcmzanEZAPy4l0xzN9P6HiYU-ofuPpH5SrdjoJWi00C6G0moCj2FGcKkwlqRBbL8w-hwULIzpA_UpgYctM-uf_vkwNLnG73xN_paUuD5CwjCaWlTVd4wDEIbBTO5Xn1bx-sD03Y5YD40lTAx4aWmWgEU3ZlLwaHkUrZrS8JwCkDHrez8uS3Vj1PgfiDeqSyemHDrC0KCAhwL8Yu5fCe7yJWWtZQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api.des.caixa:8443/identidade-digital/assinador-documentos/solicitarassinatura/consultar/:id
+        name: Consultar Assinatura
+        meta:
+          id: req_e00cca5212ca4a638441fb854921631f
+          created: 1745434361459
+          modified: 1745434361459
+          isPrivate: false
+          description: ""
+          sortKey: -1745434359674
+        method: GET
+        headers:
+          - name: apikey
+            value: l7aeae4f6612e1476ba8e9aa3a643df004
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNRmVKNjVfRC14cU55M1Zta01Ib01WS1NjZlA3S21ZazdtVjBJaEsta0F3In0.eyJqdGkiOiIwNjg1ZDRiMy02MDk1LTQzMGEtYjM0YS1lMDAzOWNkMTQ1NjYiLCJleHAiOjE3NDQ5MDk0ODgsIm5iZiI6MCwiaWF0IjoxNzQ0OTA4NTg4LCJpc3MiOiJodHRwczovL2xvZ2luLmRlcy5jYWl4YS9hdXRoL3JlYWxtcy9pbnRyYW5ldCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI5MmE0NDBkMS0yYWQ1LTQxYzAtODg4NS0yYzAzZDVhYmNkMzkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjbGktc2VyLWlkeCIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImU5YjRiZjg3LTkwMWEtNDlhNC1iMzQ4LTc2ZWVlZDcwMWY1NCIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImNsaWVudEhvc3QiOiIxMC4xMTEuMjQuMjciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudElkIjoiY2xpLXNlci1pZHgiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY2xpLXNlci1pZHgiLCJjbGllbnRBZGRyZXNzIjoiMTAuMTExLjI0LjI3IiwiZW1haWwiOiJzZXJ2aWNlLWFjY291bnQtY2xpLXNlci1pZHhAcGxhY2Vob2xkZXIub3JnIn0.erRmtZ7welh07P6ucDzMgd12TOF68ux-DmBP29eGOm1mVVk1_3umbKZVhECzifxrnmPnnywnKsTuqu_4EeECpEC8bmZSi4Q3byxQUy9X7VJ3qPBzgXdCQ5fTMpzmcmzanEZAPy4l0xzN9P6HiYU-ofuPpH5SrdjoJWi00C6G0moCj2FGcKkwlqRBbL8w-hwULIzpA_UpgYctM-uf_vkwNLnG73xN_paUuD5CwjCaWlTVd4wDEIbBTO5Xn1bx-sD03Y5YD40lTAx4aWmWgEU3ZlLwaHkUrZrS8JwCkDHrez8uS3Vj1PgfiDeqSyemHDrC0KCAhwL8Yu5fCe7yJWWtZQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api.des.caixa:8443/identidade-digital/assinador-documentos/solicitarassinatura/pesquisa
+        name: Consultas de fluxos de assinatura
+        meta:
+          id: req_477fb3f43e6d46f497092b6a9a0994e9
+          created: 1745434361462
+          modified: 1745434361462
+          isPrivate: false
+          description: ""
+          sortKey: -1745434359673
+        method: GET
+        parameters:
+          - name: status
+            value: CRIADO
+            disabled: false
+          - name: cpf
+            value: "28291818835"
+            disabled: false
+          - name: sistemaSolicitante
+            value: siidx
+            disabled: false
+          - name: id
+            value: "40"
+            disabled: false
+          - name: de
+            value: 2025-01-01
+            disabled: false
+          - name: ate
+            value: 2025-04-17
+            disabled: false
+        headers:
+          - name: apikey
+            value: l7aeae4f6612e1476ba8e9aa3a643df004
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNRmVKNjVfRC14cU55M1Zta01Ib01WS1NjZlA3S21ZazdtVjBJaEsta0F3In0.eyJqdGkiOiIwNjg1ZDRiMy02MDk1LTQzMGEtYjM0YS1lMDAzOWNkMTQ1NjYiLCJleHAiOjE3NDQ5MDk0ODgsIm5iZiI6MCwiaWF0IjoxNzQ0OTA4NTg4LCJpc3MiOiJodHRwczovL2xvZ2luLmRlcy5jYWl4YS9hdXRoL3JlYWxtcy9pbnRyYW5ldCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI5MmE0NDBkMS0yYWQ1LTQxYzAtODg4NS0yYzAzZDVhYmNkMzkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjbGktc2VyLWlkeCIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImU5YjRiZjg3LTkwMWEtNDlhNC1iMzQ4LTc2ZWVlZDcwMWY1NCIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImNsaWVudEhvc3QiOiIxMC4xMTEuMjQuMjciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudElkIjoiY2xpLXNlci1pZHgiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY2xpLXNlci1pZHgiLCJjbGllbnRBZGRyZXNzIjoiMTAuMTExLjI0LjI3IiwiZW1haWwiOiJzZXJ2aWNlLWFjY291bnQtY2xpLXNlci1pZHhAcGxhY2Vob2xkZXIub3JnIn0.erRmtZ7welh07P6ucDzMgd12TOF68ux-DmBP29eGOm1mVVk1_3umbKZVhECzifxrnmPnnywnKsTuqu_4EeECpEC8bmZSi4Q3byxQUy9X7VJ3qPBzgXdCQ5fTMpzmcmzanEZAPy4l0xzN9P6HiYU-ofuPpH5SrdjoJWi00C6G0moCj2FGcKkwlqRBbL8w-hwULIzpA_UpgYctM-uf_vkwNLnG73xN_paUuD5CwjCaWlTVd4wDEIbBTO5Xn1bx-sD03Y5YD40lTAx4aWmWgEU3ZlLwaHkUrZrS8JwCkDHrez8uS3Vj1PgfiDeqSyemHDrC0KCAhwL8Yu5fCe7yJWWtZQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: ITI
+    meta:
+      id: fld_ec7fd4095f764df1b60a57e129f91ae3
+      created: 1755290947166
+      modified: 1757008197722
+      sortKey: -1755290947166
+      description: ""
+    children:
+      - url: http://localhost:8080/api/assinador/govbr/assinar
+        name: siidx-assinador-gov.br
+        meta:
+          id: req_1f9dd17256ca446fa4a8a3fad416814e
+          created: 1751044811183
+          modified: 1758926625798
+          isPrivate: false
+          description: ""
+          sortKey: -1755290978311
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_f296172e373146da96a42e98590cf942
+              name: arquivo
+              value: xxx
+              description: ""
+              disabled: false
+              type: file
+              fileName: C:\Users\c025788\c025788\TESTE DE ASSINATURA DIGITAL EM PDF.pdf
+            - id: pair_9080358252ac4a8781dd32007e994c1b
+              name: token
+              value: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpdGkiLCJhY2Nlc3NfdG9rZW4iOiJHVU9kczBRQXpFNVJCK0t6a09WbnpZaWtWNkV3cEdEMGw4eEZvK2txWmtiUHR3VnJpbmRXblR5RjNaQktkVStrekpnbmVucGNWMEVnMmM2VEx5VkFQYWpKbWdWdzZWL3F5MkdJSHpycWlBMm1hcmdSQ3JacjI5Yjc4b0ZLZy9CLzlhdm1RcW0zMEk4TVJ5YmRPRXZ4MlZxK00vZi8xc0dqSGFyNGRPTWFiVldjSEtFV3l1V2JMcitmRVdFWDRtOVZKWGxYb3VockFzUVRDcW0vaklIWlA2WHk4bk9TVjd4VU13aVJxNHdScUNVa255TktqS1lRSzlLYTBpM3dSbkhCZ2pILy8vU2YwUzJGOTFOS0p3VG9wOTdUYklnWCtyZFNDb1A0aTdFTmI1ZnpaditINWcxMXIxdEF3N3J2Y2FvbnUrRk04UVZpa0wxTDR0VTk1TlkrVUZycytuM1F4UGFvUlJxbkFlK1BaeDU2MVhQNTd2M3krbWdZbWtzRG9ZVzhvQi8xbmMvTmJURW16ZjZxTDRVdzJEWTRhMWNKTTlLRnQyNGY1WWYzRDByT2NVWk5mRHJmUWhIbi9xaS9MVzM2OFlGbWNsOTB2KyszaEdUQldtTUZiRytmR2lWcUNmM0FWVEJwVDNjMjlTT0JUc3lYR3hQSGx1K2crR0JqY1U0M2NGZzRMc280Qko3eXYyRFF6Y3k5UWtDa1A3QitrdEY3dWNmK3BOWExzMVRyWDIwK0UxaW9Jb3RRWDYxMnJBY2pLQUVrRmVUa0lZb3dPd1dxb1M3TnMyNlA1ZUd4Y1kwRVpON0EyYmxPQUMwQkgvakRnZUV0M3FTc0hzMFo3Vk5xV2FhVlN0SjRGTkMybGk5R1lYU0E1RkEzMXVETm80NnJlemluempISVArd0R5MUs5SjRhTTgxS2pPV0lGZzFzamlObkppbGhWcTRuOXZ3Z3RpcHM3TUlTa2N3REJBdmJUUi8rRG9RTlNGWVpBY2xKMDVVQi82R3Rxd2czMXQ0cmdFbjcyc1lvblpLYkxSUWViaDh6M1F2TC96VDR6Q3N3UkhjNUNZeUlYTFJYODBxU0taL0swd0w1MWVBMDMxdGtiSlNrS2xoSEw5b0pGT0JDQmZISDNGcE5kZTlPMmMwWnVKQzNpRzB3NWw3SnlST05jakFPOFdhNkJJTzdEZDhnZWNmc2ZpYnBXNHF5am1MZmozWXFnQWd3akdNSS9jaUhXYXZNY2QzNm4waVJGK2w0dFdURDZkNWQzQ1Bna01xQ3hPSnZmZ1k2RjI4RmlEbGhMSXgza040Q2VkM0xOWVBud0oydEc4NkhaVDIwRGYyMVFqOTIwbjdpL0F2ckdsOXpGczBLTnd5LzR3cFZBcnBlMVpUWXVobmo0SGVVcUJOZGNqWHF0cDhMZmFwQXgzOHBKVWJOMjVUWGtHYVg3Z0NZK0N0MjBVa0FCeW03Kzl2dmk1azRGMFNET09NQWRPcVpHTWR2RHE3SmZMVE9sdlF1S1dwMkp4bFVjR0FjY0tyckk0RjNndkE9PSIsImNwZiI6ImJoTWg2RTBiL29EUW52d2NCMm5iemt1K2NwNjQ1OTg5ODJ4QXZiM0JDSTJLSzZ0YStLUmYiLCJub21lX2Fzc2luYW50ZSI6IkNwQTNPRmJjRDE0QXJLZE1CMUc4aGc1dmM0amRHbkJXd1orK09PNzdrYmRrajZtdmNtaHZQcjJjWHNzRUxSRGp0YzFlOHBQWVJEWUtvM1k2TkxrPSIsImlhdCI6MTc1ODkyNjU4OSwiZXhwIjoxNzU4OTMwMTg5fQ.4qSPHDvboyQHnmS9PFnC3uYOyEu7pYwb94pW8APmsJk
+              description: ""
+              disabled: false
+            - id: pair_f8faf4a1007749a99cc8a1a0bfc3b707
+              name: assinante
+              value: JUNIO CESAR DA SILVA
+              description: ""
+              disabled: false
+            - id: pair_62f830897be042bab7713d55a3cfd474
+              name: pagina
+              value: "1"
+              description: ""
+              disabled: false
+            - id: pair_1ad721c8a24c4c359aa8f945268106f1
+              name: coordx
+              value: "75"
+              description: ""
+              disabled: false
+            - id: pair_39562d973abb46d7a89fec06a5877112
+              name: coordy
+              value: "600"
+              description: ""
+              disabled: false
+        parameters:
+          - id: pair_563538626cd14be6a442802ec08d24f4
+            name: ""
+            value: ""
+            description: ""
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_eb02ed62fb974d75afa96f5cd0818541
+          - name: User-Agent
+            value: insomnia/10.3.0
+            id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+          - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+            name: Authorization
+            value: Bearer
+              eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMxOTgyMzA0ODk4Iiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzE5ODIzMDQ4OTgiLCJleHAiOjE3NTEwNDQxNDUsImlhdCI6MTc1MTA0MDU0NSwianRpIjoiNzcyYWU1YjEtNzhiNi00Y2Q3LTkxNTUtYWMwNWVkYjU1MjUzIn0.Qwi7xZEKcaWlKJrQQg9sUwuxGFMKFsB-5J6uH0GckRpsfxlNzKvybumLjmNkVHWe8RhcvvXkDYiX5bcEDSrsveslPDYkalAXzH2JZbiEIdBCqHf2nizNlqGN3yMaQjox7zfAZOOuWi7Har9n7_b3rOX-Q1sFCY4KH8P5E_Ik2LEl52P38eQlwLqQG0FQDJWluu034nuN2RpRZuCYAIdzpuo9xNHFbv0W9xXGdhBpvP7pd2vG9-RwVvkmFR_UwxcCSkFa47v_GCqvcggwQsDLZlct5nrKobvIPU510hvlWyt7kbZ1Timc8Uu1EckU1Jm1wmit3DnsZxEPtEQ1-fIK9w
+            description: ""
+            disabled: true
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/assinador/govbr/token
+        name: ITI Token
+        meta:
+          id: req_9a89d7d3053d43bdb71976301f34a4bb
+          created: 1755272244998
+          modified: 1759168960285
+          isPrivate: false
+          description: ""
+          sortKey: -1755290978211
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"code": "OC-c4c8bc4b-ec77-4a0b-9b1d-a8983440d1f8"
+            }
+        parameters:
+          - id: pair_563538626cd14be6a442802ec08d24f4
+            name: ""
+            value: ""
+            description: ""
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_676f4bd32ff34d5e89fb6f04a0e73153
+          - name: User-Agent
+            value: insomnia/10.3.0
+            id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: SerproId
+    meta:
+      id: fld_1bed97f52df4473e8825de2132d02a7d
+      created: 1757008191415
+      modified: 1757008191415
+      sortKey: -1757008191415
+      description: ""
+    children:
+      - url: http://localhost:8080/api/assinador/serproid/assinar
+        name: siidx-assinador-serproid
+        meta:
+          id: req_2cd831fa32764c00ae1bd9267f623fdf
+          created: 1757008164234
+          modified: 1757934827696
+          isPrivate: false
+          description: ""
+          sortKey: -1757008219007
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_f296172e373146da96a42e98590cf942
+              name: arquivo
+              value: xxx
+              description: ""
+              disabled: false
+              type: file
+              fileName: C:\Users\c025788\Downloads\siidx-assinador-serproid-1757934659385.pdf
+            - id: pair_9080358252ac4a8781dd32007e994c1b
+              name: token
+              value: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZXJwcm9pZCIsImFjY2Vzc190b2tlbiI6IkhDZElXd3F4SGNSWDR4YzhvOXlhOTdhVlRmbnpoQkRhY1dzSHZWekJDVlBSS2REYjVTd3VtTnJiaTlmMElZanA2WHptTCtwOWpOUGtPWGUrcEd2blNwZmNhbUpWT1ZDRVRyMVpFNC9HSW5DeGp1SXN0VFFReXlVdEh0YmZKQXlBcFFxODJYN0VxZ0pKZU40YmlyUjhLSXpqaHBDL1Q4SHBJS0hDUlZKQStnKzNhZ0s2dUFSTnNKKzdvbXdGaHRMZloxMHoySjAzcVpPVnBrV2FxNUNML1lDU0xqbjRJMnY0TkgwWGNXMmEyeGFvM0tydk9zL3NSc1ZSaGY2QzZrZGZPZ0JYMmtlVnZhNy9OUTcvc0prRnBiWTZlTTdwQnZ6dnJRUjBlMXpxMEMyOTRVYldhNkVDMEMzRlBLY3ZoT0E1TkwrYXdrdXVxeFM4bEVqNXZ5T0t4d21QemZPTnB2UGs3a3NZTEdiSlNONFJrRjRTN2dOOXlYVWVTNUVlSVZ5d3A1QThtRlBKV0RzUlpIS21xenNiOFBVMVR2QVdnNUltb25HbXQxN2pFMC9BYWxUcjdNQmRzYXE3ODBCeTMyRGtMK0N1b2Z5dUFkdW1NOHIvVHVjQ1BkZitjMU9BNnNwWmRYSkR3b0dPRFFjYm1sWkQrOVJ5eEU2ZXRIUS80L09jTVQ0a1pqTmtPTUF1OXhKeTQ1SFhqQ2REbDRrL1ZFKy9NZHRhNG9sTnRFZDJSMitWc1d6R3JqWTBSQVdvbVEzcXpxMndVUDViSE9BcENhRVNIemZUeDZjYW0vWjhZZ1B1cEFqVnlzaFZXMGhpNnpYcS9URTJlODJUS1J4ZmtEM2RzNXZiY3dkSHljYjlYREtMWS90RmF2dFl4Tm51cmxkL3JhSmRkQ0pUMTlYb2crbnBoeE4vekRiQ3ZUKzg5ZHNQVnVuTXozVjlTWTU0QzZqTlZqZ1VDdFFubXQ1UTEyRUs0MmZ6T2x2Ny9aVWVQTVpkeGNLTHg2d0Z6RDV5Nms5TFBoNncvOHJ4QThyMDNKaFBhaE1jQm1tUmtkVjlNQmx5VzROaDJoQ3ZIV1ZEVFhGdWdxNGdSakQ2YzgzWFZyRlMiLCJjcGYiOiJOZS8vVGRhZEpZREh5SGlsRThRdmx3PT0iLCJpYXQiOjE3NTc5MzQ1MDUsImV4cCI6MTc1NzkzODEwNX0.UIWi0QfBn2hprin6ZEjgiif0_4_7BfoLmb4KIW81Xs8
+              description: ""
+              disabled: false
+            - id: pair_f8faf4a1007749a99cc8a1a0bfc3b707
+              name: assinante
+              value: JUNIO CESAR DA SILVA
+              description: ""
+              disabled: false
+            - id: pair_2d638d91fb0e4c398621ab2ca4f1529e
+              name: pagina
+              value: "1"
+              description: ""
+              disabled: false
+            - id: pair_9ff954c2bde242f99bb9336306aca233
+              name: coordx
+              value: "250"
+              description: ""
+              disabled: false
+            - id: pair_d4dfe0ca8f5c487694b56d6cbbad4397
+              name: coordy
+              value: "730"
+              description: ""
+              disabled: false
+        parameters:
+          - id: pair_563538626cd14be6a442802ec08d24f4
+            name: ""
+            value: ""
+            description: ""
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_eb02ed62fb974d75afa96f5cd0818541
+          - name: User-Agent
+            value: insomnia/10.3.0
+            id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+          - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+            name: Authorization
+            value: Bearer
+              eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJoLXNpaWR4LmNhaXhhLmdvdi5iciIsInN1YiI6IjMxOTgyMzA0ODk4Iiwic2NvcGUiOlsib3BlbmlkIiwiZ292YnJfY29uZmlhYmlsaWRhZGVzIiwicHJvZmlsZSIsImVtYWlsIl0sImFtciI6WyJjYXB0Y2hhIiwieDUwOSIsIng1MDlfbmVvaWQtcHJvZCJdLCJpc3MiOiJodHRwczpcL1wvc3NvLnN0YWdpbmcuYWNlc3NvLmdvdi5iclwvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMzE5ODIzMDQ4OTgiLCJleHAiOjE3NTEwNDQxNDUsImlhdCI6MTc1MTA0MDU0NSwianRpIjoiNzcyYWU1YjEtNzhiNi00Y2Q3LTkxNTUtYWMwNWVkYjU1MjUzIn0.Qwi7xZEKcaWlKJrQQg9sUwuxGFMKFsB-5J6uH0GckRpsfxlNzKvybumLjmNkVHWe8RhcvvXkDYiX5bcEDSrsveslPDYkalAXzH2JZbiEIdBCqHf2nizNlqGN3yMaQjox7zfAZOOuWi7Har9n7_b3rOX-Q1sFCY4KH8P5E_Ik2LEl52P38eQlwLqQG0FQDJWluu034nuN2RpRZuCYAIdzpuo9xNHFbv0W9xXGdhBpvP7pd2vG9-RwVvkmFR_UwxcCSkFa47v_GCqvcggwQsDLZlct5nrKobvIPU510hvlWyt7kbZ1Timc8Uu1EckU1Jm1wmit3DnsZxEPtEQ1-fIK9w
+            description: ""
+            disabled: true
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://serproid.serpro.gov.br/oauth/v0/oauth/signature
+        name: serproid-assinador
+        meta:
+          id: req_59394b760ada40a4ba645bc960d8e133
+          created: 1757016439418
+          modified: 1757016755279
+          isPrivate: false
+          description: ""
+          sortKey: -1756149598659
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"hashes": [
+            		{
+            			"alias": "Documento PDF a ser assinado.",
+            			"hash": "jB3EYGKWHgxox4tuxSGEN4DaXZQbyuIURZurkot0Mmg=",
+            			"hash_algorithm": "2.16.840.1.101.3.4.2.1",
+            			"id": "jB3EYGKWHgxox4tuxSGEN4DaXZQbyuIURZurkot0Mmg=",
+            			"signature_format": "CMS"
+            		}
+            	]
+            }
+        parameters:
+          - id: pair_563538626cd14be6a442802ec08d24f4
+            name: ""
+            value: ""
+            description: ""
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_a55642f9ae7043db919d54347431a4c6
+          - name: User-Agent
+            value: insomnia/10.3.0
+            id: pair_7f7a659f3507498eb30263ca8ff4ee1f
+          - id: pair_5c67a193031b49c3a1fac4f5a01ac74f
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJuZW9pZCIsImF1ZCI6Im5lb2lkIiwic3ViIjoiYzE3NWJkNDMtNTMwNC00YzI2LWE1ZDQtOTY2MDNhOTM5ZDFkIiwianRpIjoiMmNmZDFhNGQtNDI1Ny00OTAwLWEzZmMtYmYyZmE5YzA4NGI4IiwibmkiOiIzMzMzNjU4MDExMCIsImlhdCI6MTc1NzAxNjY5MiwibmJmIjoxNzU3MDE2NjkyLCJleHAiOjE3NTcwMTY5OTJ9.BN6j4eU636DbA-pzm9MH2gANqHOo-ZxzW0c4FgPnkExmsrwFXqiMDmMDKKSNBW5TMfxDu-mcniuRZ-GoRwpJJ-l5ql7aa99WS5m8RmMndYZZo6eOlC_2lwYxmhyj95jHAbnEDmtM90N43zu-lLVcVeYcFE22iLLgtkC6c8cuayQNmJa39EO_LHjBI8nFJGTaMzSm5qpQ_2p8ksmFDS4IHO5U5sBUx4hfV0ThZMa0y5ITz3GjhVwZ6sU2X3iopgTxzk33w3f_q54-lSqxOBXf5EhxsVv_kS4d5dCliu2mTNejzo-eVAvh3iLv-dFP35pLI7Fln8EmUvG1PbB_NjW5GA
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_308159fe4aac19dfdd7df6479579d0cad69049a6
+    created: 1745434363960
+    modified: 1753989643296
+  cookies:
+    - key: INGRESSCOOKIE
+      value: 142623b7a257c59b
+      domain: sso.staging.acesso.gov.br
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+      creation: 2025-07-03T21:04:32.668Z
+      lastAccessed: 2025-07-31T19:20:43.293Z
+      sameSite: none
+      id: 07487f6d-e778-47e1-a14b-bdd1d1668951
+    - key: TS01d95b6b
+      value: 01fef04d4e2c404b592fe95f77438e376764163815448cbd62e46d8ea9b1f99cee98bd7d8377ccd6b558d9b99332c82250d1da0129
+      domain: sso.staging.acesso.gov.br
+      path: /
+      hostOnly: true
+      creation: 2025-07-03T21:04:32.669Z
+      lastAccessed: 2025-07-17T18:24:25.423Z
+      id: 7db30eb7-fbbf-471e-9177-27475e5fb6e2
+    - key: TS01d95b6b
+      value: 01fef04d4eb37c71dc382a8fe0b618932061f215ed97e2fb02a42671a06b0052c48becc2dcdd8e2bd0b26c1a30c09164ebb047624c
+      domain: localhost
+      path: /
+      hostOnly: true
+      creation: 2025-07-10T13:21:08.312Z
+      lastAccessed: 2025-07-10T13:50:52.430Z
+      id: 07b3c0b7-f010-4274-a844-47745611e620
+    - key: JSESSIONID
+      value: 6AE699DA5EC318AF361FC55ABE11D5BE
+      domain: psc.syngularid.com.br
+      path: /v0/oauth
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-07-14T20:10:33.373Z
+      lastAccessed: 2025-07-14T20:10:33.373Z
+      id: 6057e2ee-bc32-4829-8ff6-5fb599a4d138
+environments:
+  name: Base Environment
+  meta:
+    id: env_308159fe4aac19dfdd7df6479579d0cad69049a6
+    created: 1745434363956
+    modified: 1745434363956
+    isPrivate: false
