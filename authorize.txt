@@ -1,0 +1,4 @@
+
+https://cas.staging.iti.br/oauth2.0/authorize?response_type=code&client_id=siscaixamcmvhom&code_challenge=VxpcjjgQYx7gNWa7a6PU3Jn1KxavQEpHl6F_7PRmBWI&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fcallback&scope=signature_session&state=assinador_siidx
+ 
+https://serproid.serpro.gov.br/oauth/v0/oauth/authorize/?response_type=code&client_id=015b111d-e7a8-454b-b6ad-33e73d192997&code_challenge=RBITgbAGu2qcyh6g3dKkQ-NS_xCrf2-GwX-7CZ-Mkd4&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fcallback&scope=signature_session&state=assinador_siidx
